@@ -1,0 +1,106 @@
+ÖNCELİKLE BU İKİSİNİ YAP
+1.)File-->>Project Structure -->>SDKs -->> - ile hepsını sıl ve
++ ile yeni yukleme yap. Gelen ekranda Vendor kısmına,
+DaptOpenJDK(HotSpot) olanı indir.
+Sürümleri 1.8.275 olsun....
+ve
+
+2.)File-->>Project Structure -->>Project deki SDK da:: 1.8.275 olsun
+
+**************************************************************************************
+
+import io.restassured.http.ContentType;
+import org.testng.annotations.Test;         -->>buna dikkat et. başka Test import etme.Jnuit filan....
+
+import static io.restassured.RestAssured.*;
+import static org.hamcrest.Matchers.*;
+
+******************************************************************************
+src--> Mark Directory as --> source root  (Eger kod var ama görmuyorsa bu src yi kullan demiş oluyoruz)
+
+
+*****************************************************************************
+
+developer -> backend  -> api ve arkada çalışan sistemleri yazarlar
+          -> frontend -> UI ları yazarlar
+
+          biz selenıum- cucumber da frontend test ettik.
+          SQL ile database test ettik.
+
+          RestAssured ile api yi test ediyoruz.
+
+Soru: Api bi gönderim yeri değil mi.Ui ile database arasındaki işlevi gören.
+Adama ne verlirse onu Data ya gönderiyor.Biz bunu nesını test ediyoruz.
+
+**************************************************************************************
+Body de bi ifade [ ... ]  içinde ise bu o ifadenin dizi olugunu gösterir.
+
+Manuel Test End user gibi işlemler yapmaktan başka bişey içeriyor mu?
+
+***************************************************************************************
+
+parametre ile
+http://api.zippopotam.us/us/90210
+http://api.zippopotam.us/us?dsldjem   gibi bircok ifade gelir
+
+{
+    "code": 200,
+    "meta": {
+        "pagination": {
+            "total": 1473,
+            "pages": 74,
+            "page": 10,  -> .body("meta.pagination.page",equalTo(page))
+            "limit": 20
+         }
+    },
+
+ilk { body nin
+ikinci { meta nın
+üçüncü { pagination  un
+
+pagination un içinde de key olarak page var onun value sini alacaz.
+BUNU DA ::     .body("meta.pagination.page",equalTo(page))       ile yapacagız
+
+**********************************************************************************************
+
+tokeni postman dan almak için
+header--> en ustteki --> Bearer 6a72f07ad4685b1a298a2615c2a4683c5513b67a62991ac4f3e56fa1ebd113cb
+
+********************************************************************************************
+otomatik Random bişeyler almak için;
+
+RandomStringUtils.randomAlphabetic(8).toLowerCase()+"@gmail.com";
+
+harika bişey.alternatifleri de var.
+
+*********************************************************************************************
+
+HOCANIN inteliji exe uzerinden kullanma nasıl oluyor.!!!
+mevcud inteliji silmeden o şekilde nasıl kullanırız.
+yoksa bunca tool yuklemek dert.
+Yada sileceksem de nasıl exe ile kullanılıyor.
+
+********************************************************************************************
+
+Docker nedir:
+içinde tüm işletim sistemının oldugu bir uygulama...
+Benım Mac im yok. Ama safaride test yapacaksam bu app ile bunu yapabiliyorum.
+
+******************************************************************************************
+
+background yerine artık
+BeforeClass kullanacagız. Login işlemi yapılacak.
+Bu sayede Authorization için token alınacak, aynı token ile create--edit-- delete işlemleri için
+yetkilendirme yapmış oluyoruz.
+********************************************************************************
+
+yeni bişeyler yaptınız ... commıtı yanlış yazıp yolladınız.
+bunu duzeltmek için commit kısmında amend  e tıklayıp commit yaparız.
+
+
+
+
+
+
+
+
