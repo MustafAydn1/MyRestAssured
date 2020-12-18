@@ -97,6 +97,88 @@ yetkilendirme yapmış oluyoruz.
 yeni bişeyler yaptınız ... commıtı yanlış yazıp yolladınız.
 bunu duzeltmek için commit kısmında amend  e tıklayıp commit yaparız.
 
+********************************************************************************
+
+
+product owner : şirketin ürün üretim müdürü
+product owner= urun sahibi , ama urun musterinin aslinda. Musterinin is yerindeki temsilicisi gibi mi oluyor.
+
+SSL Nedir? Kısaca : SSL'in açılımı Secure Socket Layer'dır. Türkçe anlamıysa Güvenli Giriş Katmanı'dır.
+SSL internet ortamında çok karşılaşılan kavramlardan ...
+
+
+bir class daki Tsetlerin TestNG oldugunu nasıl anlarız???
+Testlerin başında Testler :: org.testng.annotations ise  testNG dir.
+
+
+Yol Haritamız
+1- Şirket için Roller ve Yazılım süreçleri
+2- Jenkins Kurulumu ve ayarları
+3- TestNg Projesi ekleme ve çalıştırma ayarları
+4- Cucumber Projesi ekleme ve çalıştırma ayarları
+
+
+
+
+
+
+
+*********************************************************************************
+
+Hocam Mentorumuzun verdiği 135 sayfalık ingilizce bir interview kitapcıgı var.
+Biz grup olarak haftada 5 gün buluşuyoruz ve her buluşmada da 1 er saat bu kitapcığı anlamaya çalışıyoruz
+İngilizcesi iyi olan iki arkadaşımız bize acıklıyor.
+Ancak internette araştırmamıza ragmen anlayamadıgımız
+bazı kısımlar var. Açıklamaları da teknık terimlerden oluştugu için kafamızda şekillenmiyor.
+Biz de ne zamandır bunları uygun bi zamanda size sormayı aramızda konuşuyorduk.
+Dün akşam da siz bunlara kısmen girmiş oldunuz.
+Sizden grup-6 olarak ricamız 5-10 cumlecikle de olsa bu testleri izah edebılır mısınız.
+
+
+
+component testing?
+Equivalence partitioning testing?
+Boundary value testing
+black box testing :: is körlügünün önüne gecmek icin yapilan test diyebilriz
+white box testing
+Gray Box Testing
+Integration Testing
+Scalability Testing?
+Storage Testing
+Stress Testing?
+maintenance testing?
+Test Harness?
+static ve  dynamic testing in farkları nelerdir.
+
+Teşekkurler....
+
+Aşagıya da bunların kitapçıkda gectiği metinleri de
+word olarak atayım.
+
+
+
+
+
+
+
+
+
+Unit Test ile Junit Test farkı nedir.
+Her yerde Unit Testi developerlar yapar yazıyor.
+Biz Assert lerle  hangisini yapıyoruz.
+
+end point nedir...
+Karate API Testing Framework - GET CALL  nedir.. sayfa:38
+
+Rest Assured Cucumber projectine eklenır mı ... sorun olur mu... depencyler dışında ne yapmak gerekır.
+
+
+
+
+KPI=key performance indicator
+
+
+
 
 
 

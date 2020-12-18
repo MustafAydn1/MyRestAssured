@@ -166,17 +166,23 @@ public class _3_countryTest {
     @Test(dependsOnMethods = "deleteCountry")
     public void negativeDeleteCountry(){
 
+        try {
 
-        given()
-                .cookies(cookies)
-                .pathParam("countryId",id)
-                .when()
-                .delete("/school-service/api/countries/{countryId}")
+            given()
+                    .cookies(cookies)
+                    .pathParam("countryId", id)
+                    .when()
+                    .delete("/school-service/api/countries/{countryId}")
 
-            .then()
-            .statusCode(404)
+                    .then()
+                    .statusCode(404)
 
-        ;
+            ;
+        }
+        catch(Exception ex)
+        {
+            System.out.println(ex.toString());
+        }
 
     }
 
