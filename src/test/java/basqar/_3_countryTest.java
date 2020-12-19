@@ -119,6 +119,7 @@ public class _3_countryTest {
             country.setId(id);
             country.setName(RandomStringUtils.randomAlphabetic(8));
             country.setCode(RandomStringUtils.randomAlphabetic(4));
+
             given()
                     .cookies(cookies)
                     .body(country)
